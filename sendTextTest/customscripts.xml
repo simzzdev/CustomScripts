@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ScriptSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Scripts>
+    <Script>
+      <Name>DPIFix</Name>
+      <Text>
+1 - Go to your desktop
+2 - Find the Xactimate icon
+3 - Right-click on the icon, and click Properties
+4 - Go to the Compatibility tab
+5 - If there's a button that says "High DPI Settings", click it, otherwise, skip this step.
+6 - Check the box that says "Override high DPI scaling behavior"
+7 - Change the drop-down right underneath that to "System"
+	  </Text>
+    </Script>
+    <Script>
+      <Name>WU</Name>
+      <Text>You'll want to click on the Start Menu, then begin typing in the word 'update'. The first result should say 'Check for Updates'. Click on that.</Text>
+    </Script>
+    <Script>
+      <Name>TaskMGR</Name>
+      <Text>We need to open Task Manger. You can do this by holding down the Ctrl and Shift keys on your keyboard, and pressing Esc.</Text>
+    </Script>
+    <Script>
+      <Name>Uninstall28</Name>
+      <Text>We will need to uninstall Xactimate. You will want to hold the Windows key (bottom left of your keyboard, between Alt and Ctrl) and press R, this will open a Run window. Then type in: appwiz.cpl
+Once the Programs and Features window loads, you'll want to look for Xactimate 28 in the list. Once you find it, click on it once to select and click the Uninstall button that will appear on the toolbar near the top of the screen.</Text>
+    </Script>
+  </Scripts>
+</ScriptSettings>
