@@ -74,6 +74,7 @@ namespace CustomScripts
                 && e.KeyboardData.VirtualCode == (int)Keys.F7)
             {
                 this.Show();
+                this.Activate();
             }
         }
 
@@ -96,7 +97,7 @@ namespace CustomScripts
             IntPtr wParam,
         StringBuilder lParam);*/
 
-        private void button1_Click(object sender, EventArgs e)
+        private void goBtn_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedItem != null)
             {
@@ -107,7 +108,7 @@ namespace CustomScripts
                 //System.Windows.Forms.SendKeys.Send(((Script)listBox1.SelectedItem).Text);
 
                 //Method 2 - clipboard - fast but with a sacrifice
-                Clipboard.Clear(); 
+                Clipboard.Clear();
                 Clipboard.SetText(((Script)listBox1.SelectedItem).Text);
                 SendKeys.SendWait("^v");
 
@@ -147,5 +148,16 @@ namespace CustomScripts
             this.Show();
         }
 
+        private void settingsBtn_Click(object sender, EventArgs e)
+        {
+            Settings s = new Settings();
+            s.ShowDialog();
+        }
+
+        private void hideBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+        
     }
 }
